@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Diddi Hemanth</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --bg:#0c0c0c;
+  --text:#eaeaea;
+  --muted:#9a9a9a;
+  --accent:#d4a373; /* warm tone from your image */
+}
+
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+  font-family:'Inter',sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.6;
+}
+
+/* Layout */
+.container{
+  width:90%;
+  max-width:1100px;
+  margin:auto;
+}
+
+/* Hero */
+.hero{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  min-height:100vh;
+  gap:40px;
+}
+
+.hero-text h1{
+  font-size:3.5rem;
+  letter-spacing:-1px;
+}
+
+.hero-text span{
+  color:var(--accent);
+}
+
+.hero-text p{
+  margin:15px 0;
+  color:var(--muted);
+  max-width:500px;
+}
+
+.btn{
+  display:inline-block;
+  padding:10px 20px;
+  border:1px solid var(--accent);
+  color:var(--accent);  
+  text-decoration:none;
+  margin-top:10px;
+  transition:0.3s;
+}
+
+.btn:hover{
+  background:var(--accent);
+  color:#000;
+  box-shadow:0 0 20px rgba(212,163,115,0.4);
+}
+
+/* Image */
+.hero-img img{
+  width:320px;
+  border-radius:16px;
+  box-shadow:
+    0 20px 60px rgba(0,0,0,0.6),
+    0 0 60px rgba(212,163,115,0.15);
+  transition:0.4s ease;
+}
+
+.hero-img img:hover{
+  transform:translateY(-5px) scale(1.02);
+}
+/* Sections */
+section{
+  padding:80px 0;
+  border-top:1px solid rgba(255,255,255,0.05);
+}
+
+h2{
+  margin-bottom:20px;
+  font-weight:600;
+}
+
+.projects{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+
+.card{
+  border:1px solid rgba(255,255,255,0.08);
+  padding:22px;
+  border-radius:14px;
+  transition:0.3s ease;
+  background:rgba(255,255,255,0.02);
+}
+
+.card:hover{
+  transform:translateY(-6px);
+  border-color:var(--accent);
+  box-shadow:0 10px 40px rgba(0,0,0,0.5);
+}
+
+/* Footer */
+footer{
+  text-align:center;
+  padding:40px 0;
+  color:var(--muted);
+}
+
+/* Responsive */
+@media(max-width:768px){
+  .hero{
+    flex-direction:column;
+    text-align:center;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-text">
+    <h1>Diddi <span>Hemanth</span></h1>
+    <p>Problem Solver & Systems-Focused Developer.  
+    Passionate about building scalable systems, exploring AI/ML, and solving complex challenges with clean logic.</p>
+    
+    <a href="#projects" class="btn">View Work</a>
+  </div>
+
+  <div class="hero-img">
+    <img src="profile.jpg" alt="Hemanth">
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section>
+  <h2>About</h2>
+  <p>
+    I focus on solving problems that require deep thinking rather than surface-level solutions. 
+    My work spans web development, data processing, and system design, with a strong interest in understanding 
+    how things work beneath the surface.
+  </p>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <h2>Projects</h2>
+
+  <div class="projects">
+
+    <div class="card">
+      <h3>Student Record Management System</h3>
+      <p>Built a full CRUD system using MySQL, HTML, CSS, and JavaScript for efficient student data management.</p>
+    </div>
+
+    <div class="card">
+      <h3>Satellite Image Processing CLI</h3>
+      <p>Python tool for NDVI computation, land classification, and change detection using machine learning.</p>
+    </div>
+
+    <div class="card">
+      <h3>UniLink Platform</h3>
+      <p>MERN stack social platform for students with authentication, groups, and event features.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section>
+  <h2>Skills</h2>
+  <p>C, C++, Python, JavaScript, MERN Stack, MySQL, MongoDB, Data Structures</p>
+</section>
+
+<!-- CONTACT -->
+<section>
+  <h2>Contact</h2>
+  <p>Email: diddihemanth28@gmail.com</p>
+  <p>
+    <a href="#" class="btn">GitHub</a>
+    <a href="#" class="btn">LinkedIn</a>
+  </p>
+</section>
+
+<footer>
+  © 2026 Diddi Hemanth
+</footer>
+
+</div>
+
+</body>
+</html>
